@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 import { Hero } from '../hero';
 @Pipe({name: 'raise'})
-export class ExponentialStrengthPipe implements PipeTransform {
+export class Raise implements PipeTransform {
   transform(value: number, exponent: string): number {
     let exp = parseFloat(exponent);
     return Math.pow(value, isNaN(exp) ? 1 : exp);
