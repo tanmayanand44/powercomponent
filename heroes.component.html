@@ -6,5 +6,5 @@
     <label>Power:
 	    <input [(ngModel)]="power" placeholder="3">
     </label>
-    <label>{{ number | exponentialStrength: power }}</label>
+    <label>{{ number | raise: power }}</label>
 </div>
